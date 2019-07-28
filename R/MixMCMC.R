@@ -847,7 +847,7 @@ ll_print = list()
 ll_print[1] = out$ll
 if(rep>1){
   for (i in 2:rep){
-    out_new = MixMPLN_function(X,K, penalty , init)
+    out_new = MixMCMC_function(X,K, penalty , init)
     ll_print[i] = out_new$ll
     if(out_new$ll > out$ll){
       out = out_new
